@@ -1,39 +1,55 @@
-<!-- Navbar with Dropdown Submenus For Restaurant Website -->
-<!DOCTYPE html>
+<!-- Styling a Contact Form For a Travelling Website -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Website</title>
+ </head>
+ <body>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust Travels</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
-  <div class="logo">Bistro2026</div>
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">&#9776;</label>
-  
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li class="dropdown">
-      <a href="#">Our Menu <span class="arrow">&#9662;</span></a>
-      <ul class="submenu">
-        <li><a href="#">Breakfast</a></li>
-        <li class="dropdown-submenu">
-          <a href="#">Main Course <span class="arrow">&#9656;</span></a>
-          <ul class="submenu-right">
-            <li><a href="#">Vegan Options</a></li>
-            <li><a href="#">Grill & Steak</a></li>
-            <li><a href="#">Seafood</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Desserts</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Reservations</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="overlay">
+                    <h2>Start Your Journey</h2>
+                    <p>Ready to explore the world? Drop us a message and our travel experts will reach out shortly.</p>
+                </div>
+            </div>
 
+            <form class="contact-form">
+                <h3>Get In Touch</h3>
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <select>
+                        <option value="" disabled selected>Preferred Destination</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="americas">Americas</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <textarea rows="5" placeholder="Tell us about your dream trip..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
+ </body>
+ </html>
